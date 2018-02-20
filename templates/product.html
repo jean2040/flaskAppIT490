@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>{{product.title}}</h1>
+    <small>Written by {{product.author}} on {{product.create_date}}</small>
+    <hr>
+    <div>
+        {{product.body | safe}}
+    </div>
+{% endblock %}
